@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#454545">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#454545" />
     <title>Matt Penlington</title>
-    <link rel="stylesheet" type="text/css" href="style/main.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+  </head>
+  <body>
     <section id="landing">
-        <h1 class="titleText">Scroll Down</h1>
+      <h1 class="titleText">Scroll Down</h1>
     </section>
     <section id="aboutMe">
-            <div class="sidebar"></div>
-            <div class="circle orangeCircle bigCircle lax" id="showpiece" data-lax-preset="driftRight" data-lax-opacity="0 0.9, 5000 0"></div>
+      <div class="sidebar"></div>
+      <div
+        class="circle orangeCircle bigCircle lax"
+        id="showpiece"
+        data-lax-preset="driftRight"
+        data-lax-opacity="0 0.9, 5000 0"
+      ></div>
+      <div id="aboutMeContainer" class="lax" data-lax-preset="driftLeft fadeIn">
+        <h1>About Me</h1>
+        <p>
+          I am a currently completing my Bsc in Computer Science at the
+          University of Sussex, near Brighton. I am a passionate Web and
+          JavaScript developer and a general tech enthusiast. To pay the bills
+          whilst at uni, I took up bartending and now make cocktails for a
+          living at TGI Fridays, Brighton Marina. Outside of work my hobbies
+          include watching films, playing games and listening to the 'How Stuff
+          Works' podcast.
+        </p>
+        <div id="img1" class="aboutIcon">
+          <img src="resources/aboutMeIcons/001-data.png" />
+        </div>
+        <div id="img2" class="aboutIcon">
+          <img src="resources/aboutMeIcons/003-bar.png" />
+        </div>
+        <div id="img3" class="aboutIcon">
+          <img src="resources/aboutMeIcons/podcast.png" />
+        </div>
+      </div>
+      <div class="circle grayCircle mediumCircle lax" id="showpiecesmall" data-lax-preset="driftRight fadeIn"></div>
     </section>
 
     <script src="node_modules/lax.js/lib/lax.min.js"></script>
-    <script src="scripts/anim.js"></script> 
- 
-</body>
+    <script src="scripts/anim.js"></script>
+  </body>
 </html>
