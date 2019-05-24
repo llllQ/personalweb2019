@@ -89,7 +89,7 @@ body {
   }
   #aboutMeContainer {
     position: relative;
-    top: -330px;
+    top: -280px;
     margin-left: 55%;
     margin-right: 15%;
     display: -ms-grid;
@@ -168,7 +168,7 @@ body {
   }
 }
 
-@media (min-width: 1000px), (aspect-ratio: 16 / 9) {
+@media (min-width: 1000px) and (aspect-ratio: 16 / 9) {
   #aboutMe .sidebar {
     width: 30%;
   }
@@ -190,7 +190,7 @@ body {
   }
 }
 
-@media (min-width: 2000px), (aspect-ratio: 16 / 9) {
+@media (min-width: 2000px) and (aspect-ratio: 16 / 9) {
   #aboutMe .sidebar {
     width: 30%;
   }
@@ -228,7 +228,7 @@ body {
   }
 }
 
-@media (min-width: 3300px), (aspect-ratio: 16 / 9) {
+@media (min-width: 3300px) and (aspect-ratio: 16 / 9) {
   #aboutMe .sidebar {
     width: 30%;
   }
