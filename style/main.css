@@ -96,10 +96,6 @@ body {
   display: none;
 }
 
-#portfolio {
-  height: 100vh;
-}
-
 @media (min-width: 700px) {
   #aboutMe {
     height: 100vh;
