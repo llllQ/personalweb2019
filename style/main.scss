@@ -1,4 +1,5 @@
 $font-stack: "Montserrat", sans-serif;
+$font-headings: "Roboto", sans-serif;
 $gainsclr: #dedede;
 $vividclr: #ff9800;
 $ivoryclr: #fffff0;
@@ -17,18 +18,40 @@ body {
   background-color: white;
 }
 
+h1, h2, h3{
+  font-family: $font-headings;
+}
+
 #landing {
   overflow: hidden;
   height: 100vh;
   background-color: $spaceclr;
 
   .titleText {
-    text-align: center;
-    color: $ivoryclr;
+    text-align: left;
+    text-transform: uppercase;
+    // color: $ivoryclr;
+    color: #fff;
     position: relative;
-    font-size: 50px;
-    top: calc(33% - 25px);
+    font-size: 100px;
+    top: calc(50% - 250px);
     margin: 0;
+    margin-left: 18%;
+    // margin-right: 20%;
+    .forename{
+      color: $vividclr;
+    }
+    .surname{
+      padding-top: 500px;
+      color: #fff;
+    }
+  }
+
+  #downScroll{
+    width: 90px;
+    position: relative;
+    left: calc(50% - 45px);
+    top: 8em;
   }
 }
 
@@ -95,13 +118,14 @@ body {
     font-weight: bold;
     margin-bottom: 0;
     color: #2F2F2F;
+    text-transform: uppercase;
     // grid-area: title;
   }
 
   p {
     font-size: 20px;
     color: #2F2F2F;
-    text-align: justify;
+    // text-align: justify;
     // grid-area: text;
   }
   img{

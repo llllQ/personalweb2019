@@ -9,6 +9,10 @@ body {
   background-color: white;
 }
 
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+}
+
 #landing {
   overflow: hidden;
   height: 100vh;
@@ -16,12 +20,30 @@ body {
 }
 
 #landing .titleText {
-  text-align: center;
-  color: #fffff0;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
   position: relative;
-  font-size: 50px;
-  top: calc(33% - 25px);
+  font-size: 100px;
+  top: calc(50% - 250px);
   margin: 0;
+  margin-left: 18%;
+}
+
+#landing .titleText .forename {
+  color: #ff9800;
+}
+
+#landing .titleText .surname {
+  padding-top: 500px;
+  color: #fff;
+}
+
+#landing #downScroll {
+  width: 90px;
+  position: relative;
+  left: calc(50% - 45px);
+  top: 8em;
 }
 
 #aboutMe {
@@ -85,12 +107,12 @@ body {
   font-weight: bold;
   margin-bottom: 0;
   color: #2F2F2F;
+  text-transform: uppercase;
 }
 
 #aboutMeContainer p {
   font-size: 20px;
   color: #2F2F2F;
-  text-align: justify;
 }
 
 #aboutMeContainer img {
