@@ -34,7 +34,7 @@ h1, h2, h3{
     color: #fff;
     position: relative;
     font-size: 6.5em;
-    font-weight: 600;
+    font-weight: 900;
     top: calc(50% - 41%);
     margin: 0;
     margin-left: 16%;
@@ -48,10 +48,15 @@ h1, h2, h3{
   }
 
   #downScroll{
-    width: 90px;
+    font-size: 6.5em;
+    font-weight: 900;
+    color: $vividclr;
     position: absolute;
-    left: calc(50% - 45px); 
-    top: calc(100% - 18%);
+    left: calc(50% - .5em); 
+    top: calc(100% - 20%);
+  }
+  #downScroll:active{
+    color: #fff;
   }
 }
 
