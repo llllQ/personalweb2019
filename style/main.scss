@@ -1,5 +1,5 @@
 $font-stack: "Montserrat", sans-serif;
-$font-headings: "Roboto", sans-serif;
+$font-headings: "Roboto Mono", monospace;
 $gainsclr: #dedede;
 $vividclr: #ff9800;
 $ivoryclr: #fffff0;
@@ -31,17 +31,13 @@ h1, h2, h3{
   .titleText {
     text-align: left;
     text-transform: uppercase;
-    // color: $ivoryclr;
     color: #fff;
     position: relative;
-    // font-size: 100px;
     font-size: 6.5em;
-    // top: calc(50% - 280px);
-    top: calc(50% - 39%);
-   
+    font-weight: 600;
+    top: calc(50% - 41%);
     margin: 0;
-    margin-left: 18%;
-    // margin-right: 20%;
+    margin-left: 16%;
     .forename{
       color: $vividclr;
     }
