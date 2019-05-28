@@ -10,7 +10,9 @@ body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Roboto Mono", monospace;
 }
 
@@ -54,7 +56,7 @@ h1, h2, h3 {
   font-weight: 900;
   color: #ff9800;
   position: absolute;
-  left: calc(50% - .5em);
+  left: calc(50% - 0.5em);
   top: calc(100% - 20%);
 }
 
@@ -122,13 +124,13 @@ h1, h2, h3 {
   font-size: 45px;
   font-weight: bold;
   margin-bottom: 0;
-  color: #2F2F2F;
+  color: #2f2f2f;
   text-transform: uppercase;
 }
 
 #aboutMeContainer p {
   font-size: 20px;
-  color: #2F2F2F;
+  color: #2f2f2f;
 }
 
 #aboutMeContainer img {
@@ -136,6 +138,31 @@ h1, h2, h3 {
 }
 
 @media (min-width: 700px) {
+  #landing .titleText {
+    position: relative;
+    font-size: 9em;
+    font-weight: 900;
+    top: calc(50% - 2.5em);
+    margin: 0;
+    margin-left: 10%;
+  }
+  #landing .titleText .forename {
+    color: #ff9800;
+  }
+  #landing .titleText .surname {
+    color: #fff;
+  }
+  #landing #downScroll {
+    font-size: 6.5em;
+    font-weight: 900;
+    color: #ff9800;
+    position: absolute;
+    left: calc(50% - 0.5em);
+    top: calc(100% - 20%);
+  }
+  #landing #downScroll:active {
+    color: #fff;
+  }
   #aboutMe {
     height: 100vh;
   }
@@ -178,7 +205,7 @@ h1, h2, h3 {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
-        grid-template-areas: "title title title"  "text text text"  "img1 img2 img3";
+        grid-template-areas: "title title title" "text text text" "img1 img2 img3";
   }
   #aboutMeContainer h1 {
     font-size: 45px;
@@ -253,6 +280,28 @@ h1, h2, h3 {
 }
 
 @media (min-width: 1000px) and (aspect-ratio: 16 / 9) {
+  #landing .titleText {
+    position: relative;
+    font-size: 12em;
+    font-weight: 900;
+    top: calc(50% - 2.5em);
+    margin: 0;
+    margin-left: 10%;
+  }
+  #landing .titleText .forename {
+    color: #ff9800;
+  }
+  #landing #downScroll {
+    font-size: 6.5em;
+    font-weight: 900;
+    color: #ff9800;
+    position: absolute;
+    left: calc(50% - 0.5em);
+    top: calc(100% - 20%);
+  }
+  #landing #downScroll:active {
+    color: #fff;
+  }
   #aboutMe .sidebar {
     width: 30%;
     height: 100%;
@@ -278,6 +327,13 @@ h1, h2, h3 {
 }
 
 @media (min-width: 2000px) and (aspect-ratio: 16 / 9) {
+  #landing .titleText {
+    font-size: 16em;
+    margin-left: 10%;
+  }
+  #landing #downScroll {
+    font-size: 13em;
+  }
   #aboutMe .sidebar {
     width: 30%;
     height: 100%;
@@ -319,6 +375,13 @@ h1, h2, h3 {
 }
 
 @media (min-width: 3300px) and (aspect-ratio: 16 / 9) {
+  #landing .titleText {
+    font-size: 25em;
+    margin-left: 9%;
+  }
+  #landing #downScroll {
+    font-size: 20em;
+  }
   #aboutMe .sidebar {
     width: 30%;
     height: 100%;

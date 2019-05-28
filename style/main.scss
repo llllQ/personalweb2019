@@ -19,7 +19,9 @@ body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-family: $font-headings;
 }
 
@@ -47,24 +49,24 @@ h1, h2, h3{
     top: calc(50% - 41%);
     margin: 0;
     margin-left: 16%;
-    .forename{
+    .forename {
       color: $vividclr;
     }
-    .surname{
+    .surname {
       padding-top: 500px;
       color: #fff;
     }
   }
 
-  #downScroll{  
+  #downScroll {
     font-size: 6.5em;
     font-weight: 900;
     color: $vividclr;
     position: absolute;
-    left: calc(50% - .5em); 
+    left: calc(50% - 0.5em);
     top: calc(100% - 20%);
   }
-  #downScroll:active{
+  #downScroll:active {
     color: #fff;
   }
 }
@@ -84,14 +86,12 @@ h1, h2, h3{
     // margin-right: 0;
   }
 
-  #showpiecesmall{
+  #showpiecesmall {
     position: relative;
     top: -7em;
     left: calc(100% - 4rem);
     opacity: 1;
   }
-
- 
 }
 
 .circle {
@@ -105,7 +105,7 @@ h1, h2, h3{
 }
 
 .grayCircle {
-    background-color: $spaceclr;
+  background-color: $spaceclr;
 }
 
 .bigCircle {
@@ -113,9 +113,9 @@ h1, h2, h3{
   height: 45rem;
 }
 
-.mediumCircle{
-    width: 12rem;
-    height: 12rem;
+.mediumCircle {
+  width: 12rem;
+  height: 12rem;
 }
 
 #aboutMeContainer {
@@ -131,15 +131,15 @@ h1, h2, h3{
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 0;
-    color: #2F2F2F;
+    color: #2f2f2f;
     text-transform: uppercase;
   }
 
   p {
     font-size: 20px;
-    color: #2F2F2F;
+    color: #2f2f2f;
   }
-  img{
+  img {
     display: none;
   }
 }
@@ -149,24 +149,53 @@ h1, h2, h3{
 // }
 
 @media (min-width: 700px) {
+  #landing {
+    .titleText {
+      position: relative;
+      font-size: 9em;
+      font-weight: 900;
+      // top: calc(50% - 41%);
+      top: calc(50% - 2.5em);
+      margin: 0;
+      margin-left: 10%;
+      .forename {
+        color: $vividclr;
+      }
+      .surname {
+        color: #fff;
+      }
+    }
+
+    #downScroll {
+      font-size: 6.5em;
+      font-weight: 900;
+      color: $vividclr;
+      position: absolute;
+      left: calc(50% - 0.5em);
+      top: calc(100% - 20%);
+    }
+    #downScroll:active {
+      color: #fff;
+    }
+  }
   #aboutMe {
     height: 100vh;
     .sidebar {
-        display: block;
+      display: block;
       width: 25%;
       height: 100%;
-        float: left;
-        background-color: $gainsclr;
+      float: left;
+      background-color: $gainsclr;
     }
     #showpiece {
       position: relative;
       top: calc(50% - 15rem);
       left: calc(25% - 15rem);
     }
-    #showpiecesmall{
-        position: absolute;
-        top: calc(167%);
-        left: calc(38%);
+    #showpiecesmall {
+      position: absolute;
+      top: calc(167%);
+      left: calc(38%);
     }
   }
   .circle {
@@ -177,9 +206,9 @@ h1, h2, h3{
     width: 30rem;
     height: 30rem;
   }
-  .mediumCircle{
-      width: 12rem;
-      height: 12rem;
+  .mediumCircle {
+    width: 12rem;
+    height: 12rem;
   }
   #aboutMeContainer {
     position: relative;
@@ -190,9 +219,10 @@ h1, h2, h3{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     // grid-template-rows: 100px 100px 100px;
-    grid-template-areas: "title title title" 
-                         "text text text" 
-                         "img1 img2 img3";
+    grid-template-areas:
+      "title title title"
+      "text text text"
+      "img1 img2 img3";
 
     h1 {
       font-size: 45px;
@@ -209,196 +239,235 @@ h1, h2, h3{
       grid-area: text;
     }
 
-    .aboutIcon{
-        border-radius: 50%;
-        border-style: solid;
-        border-width: 2px;
-        width: 80%;
-        height: 120%;
-        // padding-top: 80%;
-        margin-left: 10%;
-        overflow: hidden;
+    .aboutIcon {
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 2px;
+      width: 80%;
+      height: 120%;
+      // padding-top: 80%;
+      margin-left: 10%;
+      overflow: hidden;
     }
 
-    img{
+    img {
       display: block;
     }
 
-    #img1{
-        grid-area: img1;
-        border-color: #ff9800;
-        img{
-            position: relative;
-            width: 60%;
-            height: 70%;
-            top: calc(50% - 35%);
-            left: calc(50% - 35%);
-        }
+    #img1 {
+      grid-area: img1;
+      border-color: #ff9800;
+      img {
+        position: relative;
+        width: 60%;
+        height: 70%;
+        top: calc(50% - 35%);
+        left: calc(50% - 35%);
+      }
     }
 
-    #img2{
-        grid-area: img2;
-        border-color: #ffae00;
-        img{
-            position: relative;
-            width: 70%;
-            height: 70%;
-            top: calc(50% - 35%);
-            left: calc(50% - 35%);
-        }
+    #img2 {
+      grid-area: img2;
+      border-color: #ffae00;
+      img {
+        position: relative;
+        width: 70%;
+        height: 70%;
+        top: calc(50% - 35%);
+        left: calc(50% - 35%);
+      }
     }
 
-    #img3{
-        grid-area: img3;
-        border-color: #ffe600;
-        img{
-            position: relative;
-            width: 70%;
-            height: 70%;
-            top: calc(50% - 35%);
-            left: calc(50% - 35%);
-        }
+    #img3 {
+      grid-area: img3;
+      border-color: #ffe600;
+      img {
+        position: relative;
+        width: 70%;
+        height: 70%;
+        top: calc(50% - 35%);
+        left: calc(50% - 35%);
+      }
     }
   }
 }
 
-
-@media (min-width: 1000px) and (aspect-ratio: 16/9){
-    #aboutMe {
-        .sidebar {
-        // display: block;
-          width: 30%;
-          height: 100%;
-        float: left;
-        background-color: $gainsclr;
-          // box-shadow: 0px 0px 1px 1px #AAA;
-        }
-        #showpiece {
-          position: relative;
-          top: calc(50% - 15rem);
-          left: calc(30% - 15rem);
-        }
-        #showpiecesmall{
-            position: absolute;
-            top: calc(167%);
-            left: calc(38%);
-            // top: ca
-        }
+@media (min-width: 1000px) and (aspect-ratio: 16/9) {
+  #landing {
+    .titleText {
+      position: relative;
+      font-size: 12em;
+      font-weight: 900;
+      // top: calc(50% - 41%);
+      top: calc(50% - 2.5em);
+      margin: 0;
+      margin-left: 10%;
+      .forename {
+        color: $vividclr;
       }
-
-      #aboutMeContainer {
-        position: relative;
-        top: -120px;
-        margin-left: 55%;
-        margin-right: 15%;
-
-        h1{
-
-        }
-
-        p{
-        }
-
+      .surname {
+        // padding-top: 500px;
       }
+    }
+    #downScroll {
+      font-size: 6.5em;
+      font-weight: 900;
+      color: $vividclr;
+      position: absolute;
+      left: calc(50% - 0.5em);
+      top: calc(100% - 20%);
+    }
+    #downScroll:active {
+      color: #fff;
+    }
+  }
 
+  #aboutMe {
+    .sidebar {
+      // display: block;
+      width: 30%;
+      height: 100%;
+      float: left;
+      background-color: $gainsclr;
+      // box-shadow: 0px 0px 1px 1px #AAA;
+    }
+    #showpiece {
+      position: relative;
+      top: calc(50% - 15rem);
+      left: calc(30% - 15rem);
+    }
+    #showpiecesmall {
+      position: absolute;
+      top: calc(167%);
+      left: calc(38%);
+      // top: ca
+    }
+  }
+
+  #aboutMeContainer {
+    position: relative;
+    top: -120px;
+    margin-left: 55%;
+    margin-right: 15%;
+
+    h1 {
+    }
+
+    p {
+    }
+  }
 }
 
-@media (min-width: 2000px) and (aspect-ratio: 16/9){
-    #aboutMe {
-        .sidebar {
-          width: 30%;
-          height: 100%;
-        float: left;
-        background-color: $gainsclr;
-          // box-shadow: 0px 0px 1px 1px #AAA;
-        }
-        #showpiece {
-          position: relative;
-          top: calc(50% - 25rem);
-          left: calc(30% - 25rem);
-        }
-        #showpiecesmall{
-            position: absolute;
-            top: calc(169%);
-            left: calc(40%);
-            // top: ca
-        }
-      }
-      .bigCircle {
-        width: 50rem;
-        height: 50rem;
-      }
-      .mediumCircle{
-          width: 21rem;
-          height: 21rem;
-      }
+@media (min-width: 2000px) and (aspect-ratio: 16/9) {
+  #landing {
+    .titleText {
+      font-size: 16em;
+      margin-left: 10%;
+    }
+    #downScroll{
+      font-size: 13em;
+    }
+  }
+  #aboutMe {
+    .sidebar {
+      width: 30%;
+      height: 100%;
+      float: left;
+      background-color: $gainsclr;
+      // box-shadow: 0px 0px 1px 1px #AAA;
+    }
+    #showpiece {
+      position: relative;
+      top: calc(50% - 25rem);
+      left: calc(30% - 25rem);
+    }
+    #showpiecesmall {
+      position: absolute;
+      top: calc(169%);
+      left: calc(40%);
+      // top: ca
+    }
+  }
+  .bigCircle {
+    width: 50rem;
+    height: 50rem;
+  }
+  .mediumCircle {
+    width: 21rem;
+    height: 21rem;
+  }
 
-      #aboutMeContainer {
-        position: relative;
-        top: -450px;
-        margin-left: 65%;
-        margin-right: 15%;
+  #aboutMeContainer {
+    position: relative;
+    top: -450px;
+    margin-left: 65%;
+    margin-right: 15%;
 
-        h1{
-            font-size: 60px;
-            padding-bottom: 20px;
-        }
+    h1 {
+      font-size: 60px;
+      padding-bottom: 20px;
+    }
 
-        p{
-            font-size: 27px;
-            padding-bottom: 30px;
-        }
-
-      }
-
+    p {
+      font-size: 27px;
+      padding-bottom: 30px;
+    }
+  }
 }
 
-@media (min-width: 3300px) and  (aspect-ratio: 16/9){
-    #aboutMe {
-        .sidebar {
-          width: 30%;
-          height: 100%;
-        float: left;
-        background-color: $gainsclr;
-          // box-shadow: 0px 0px 1px 1px #AAA;
-        }
-        #showpiece {
-          position: relative;
-          top: calc(50% - 37.5rem);
-          left: calc(30% - 37.5rem);
-        }
-        #showpiecesmall{
-            position: absolute;
-            top: calc(169%);
-            left: calc(40%);
-            // top: ca
-        }
-      }
-      .bigCircle {
-        width: 75rem;
-        height: 75rem;
-      }
-      .mediumCircle{
-          width: 34rem;
-          height: 34rem;
-      }
+@media (min-width: 3300px) and (aspect-ratio: 16/9) {
+  #landing {
+    .titleText {
+      font-size: 25em;
+      margin-left: 9%;
+    }
+    #downScroll{
+      font-size: 20em;
+    }
+  }
+  #aboutMe {
+    .sidebar {
+      width: 30%;
+      height: 100%;
+      float: left;
+      background-color: $gainsclr;
+      // box-shadow: 0px 0px 1px 1px #AAA;
+    }
+    #showpiece {
+      position: relative;
+      top: calc(50% - 37.5rem);
+      left: calc(30% - 37.5rem);
+    }
+    #showpiecesmall {
+      position: absolute;
+      top: calc(169%);
+      left: calc(40%);
+      // top: ca
+    }
+  }
+  .bigCircle {
+    width: 75rem;
+    height: 75rem;
+  }
+  .mediumCircle {
+    width: 34rem;
+    height: 34rem;
+  }
 
-      #aboutMeContainer {
-        position: relative;
-        top: -650px;
-        margin-left: 65%;
-        margin-right: 15%;
+  #aboutMeContainer {
+    position: relative;
+    top: -650px;
+    margin-left: 65%;
+    margin-right: 15%;
 
-        h1{
-            font-size: 90px;
-            padding-bottom: 20px;
-        }
+    h1 {
+      font-size: 90px;
+      padding-bottom: 20px;
+    }
 
-        p{
-            font-size: 44px;
-            padding-bottom: 30px;
-        }
-
-      }
+    p {
+      font-size: 44px;
+      padding-bottom: 30px;
+    }
+  }
 }
-
