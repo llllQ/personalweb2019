@@ -16,6 +16,10 @@ h3 {
   font-family: "Roboto Mono", monospace, Arial;
 }
 
+p {
+  font-size: 20px;
+}
+
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
