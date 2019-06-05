@@ -145,6 +145,10 @@ p {
   display: none;
 }
 
+#portfolio {
+  overflow: hidden;
+}
+
 #portfolio .header {
   background-color: #fff;
   height: 15vh;
@@ -163,8 +167,9 @@ p {
 #portfolio .header h1 {
   position: absolute;
   bottom: 0;
+  top: 38%;
   left: -5%;
-  font-size: 70px;
+  font-size: 75px;
   font-weight: 900;
   color: #454545;
   text-transform: uppercase;
@@ -500,14 +505,16 @@ p {
   }
   #portfolio .content .card {
     position: relative;
-    left: 15%;
-    top: calc(50% - 25%);
+    left: 10%;
+    top: calc(50% - 30%);
     color: #535353;
     background-color: #fff;
     border-radius: 2%;
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 60%;
     margin-top: 0%;
+    -webkit-box-shadow: #2f2f2f;
+            box-shadow: #2f2f2f;
   }
 }
 
@@ -567,6 +574,15 @@ p {
     top: -120px;
     margin-left: 55%;
     margin-right: 15%;
+  }
+  #portfolio .header h1 {
+    font-size: 16em;
+    top: 19%;
+  }
+  #portfolio .content {
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
@@ -628,6 +644,24 @@ p {
     font-size: 27px;
     padding-bottom: 30px;
   }
+  #portfolio .header h1 {
+    font-size: 20em;
+    top: 22%;
+  }
+  #portfolio .content {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #portfolio .content .card h3 {
+    font-size: 3em;
+  }
+  #portfolio .content .card p {
+    font-size: 2em;
+  }
+  #portfolio .content .card #links a {
+    font-size: 3.2em;
+  }
 }
 
 @media (min-width: 3300px) and (aspect-ratio: 16 / 9) {
@@ -687,6 +721,24 @@ p {
   #aboutMeContainer p {
     font-size: 44px;
     padding-bottom: 30px;
+  }
+  #portfolio .header h1 {
+    font-size: 30em;
+    top: 23%;
+  }
+  #portfolio .content {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #portfolio .content .card h3 {
+    font-size: 4em;
+  }
+  #portfolio .content .card p {
+    font-size: 3em;
+  }
+  #portfolio .content .card #links a {
+    font-size: 6em;
   }
 }
 /*# sourceMappingURL=main.css.map */
