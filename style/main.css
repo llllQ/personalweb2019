@@ -211,6 +211,11 @@ p {
   font-size: 20px;
 }
 
+#portfolio .content .card .bold {
+  color: #ff9800;
+  font-weight: 700;
+}
+
 #portfolio .content .card hr {
   border: 1.5px solid #ff9800;
   border-radius: 5px;
@@ -506,12 +511,12 @@ p {
   #portfolio .content .card {
     position: relative;
     left: 10%;
-    top: calc(50% - 30%);
+    top: calc(50% - 31%);
     color: #535353;
     background-color: #fff;
     border-radius: 2%;
     width: 70%;
-    height: 60%;
+    height: 62%;
     margin-top: 0%;
     -webkit-box-shadow: #2f2f2f;
             box-shadow: #2f2f2f;

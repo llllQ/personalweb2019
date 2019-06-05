@@ -215,6 +215,11 @@ p {
       p {
         font-size: 20px;
       }
+      .bold{
+        // color: black;
+        color: $vividclr;
+        font-weight: 700;
+      }
       hr {
         border: 1.5px solid $vividclr;
         border-radius: 5px;
@@ -498,12 +503,12 @@ p {
       .card {
         position: relative;
         left: 10%;
-        top: calc(50% - 30%);
+        top: calc(50% - 31%);
         color: $textclr;
         background-color: #fff;
         border-radius: 2%;
         width: 70%;
-        height: 60%;
+        height: 62%;
         margin-top: 0%;
         box-shadow: #2f2f2f;
       }
