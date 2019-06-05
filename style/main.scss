@@ -1,4 +1,4 @@
-$font-stack: "Montserrat", sans-serif;
+$font-stack: "Montserrat", sans-serif, Arial;
 $font-headings: "Roboto Mono", monospace;
 $gainsclr: #dedede;
 $vividclr: #ff9800;
@@ -156,6 +156,7 @@ h3 {
       background-color: #fff;
       height: 15vh;
       overflow: hidden;
+      position: relative;
       .desktop{
         display: none;
       }
@@ -163,12 +164,14 @@ h3 {
         display: block;
       }
       h1{
-        position: relative;
-        top: 42%;
-        left: -16%;
+        position: absolute;
+        bottom: 0;
+        // left: -16%;
+        left: 0;
         font-size: 70px;
         font-weight: 900;
         color: $spaceclr;
+        text-transform: uppercase;
         margin: 0;
         
       }

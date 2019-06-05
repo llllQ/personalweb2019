@@ -4,7 +4,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif, Arial;
   color: #454545;
   background-color: white;
   scroll-behavior: smooth;
@@ -145,6 +145,7 @@ h3 {
   background-color: #fff;
   height: 15vh;
   overflow: hidden;
+  position: relative;
 }
 
 #portfolio .header .desktop {
@@ -156,12 +157,13 @@ h3 {
 }
 
 #portfolio .header h1 {
-  position: relative;
-  top: 42%;
-  left: -16%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   font-size: 70px;
   font-weight: 900;
   color: #454545;
+  text-transform: uppercase;
   margin: 0;
 }
 
