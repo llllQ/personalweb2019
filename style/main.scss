@@ -150,8 +150,27 @@ h3 {
 }
 
 #portfolio{
-    height: 100vh;
-    background-color: $stormclr;
+    // height: 200vh;
+    // background-color: #fff;
+    .header{
+      background-color: #fff;
+      height: 26vh;
+      overflow: hidden;
+      h1{
+        position: relative;
+        top: 5%;
+        left: -60%;
+        font-size: 15em;
+        font-weight: 900;
+        color: $spaceclr;
+        margin: 0;
+        
+      }
+    }
+    .content{
+      background-color: $spaceclr;
+      height: 74vh;
+    }
 }
 
 @media (min-width: 700px) {
@@ -253,7 +272,7 @@ h3 {
       width: 25%;
       height: 100%;
       float: left;
-      background-color: $stormclr;
+      background-color: $gainsclr;
     }
     #showpiece {
       position: relative;

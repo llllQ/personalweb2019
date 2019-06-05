@@ -141,9 +141,25 @@ h3 {
   display: none;
 }
 
-#portfolio {
-  height: 100vh;
-  background-color: #4e6766;
+#portfolio .header {
+  background-color: #fff;
+  height: 26vh;
+  overflow: hidden;
+}
+
+#portfolio .header h1 {
+  position: relative;
+  top: 5%;
+  left: -60%;
+  font-size: 15em;
+  font-weight: 900;
+  color: #454545;
+  margin: 0;
+}
+
+#portfolio .content {
+  background-color: #454545;
+  height: 74vh;
 }
 
 @media (min-width: 700px) {
@@ -250,7 +266,7 @@ h3 {
     width: 25%;
     height: 100%;
     float: left;
-    background-color: #4e6766;
+    background-color: #dedede;
   }
   #aboutMe #showpiece {
     position: relative;
