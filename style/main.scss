@@ -252,6 +252,11 @@ h3 {
   }
 }
 
+#contact{
+  height: 100vh;
+  background-color: $hoverclr;
+}
+
 @media (min-width: 700px) {
   #landing {
     .titleText {

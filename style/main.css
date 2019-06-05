@@ -247,6 +247,11 @@ h3 {
   grid-area: card3;
 }
 
+#contact {
+  height: 100vh;
+  background-color: #ffc300;
+}
+
 @media (min-width: 700px) {
   #landing .titleText {
     position: relative;
