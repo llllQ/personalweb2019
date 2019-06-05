@@ -13,7 +13,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace, Arial;
 }
 
 .unselectable {
@@ -159,7 +159,6 @@ h3 {
 #portfolio .header h1 {
   position: absolute;
   bottom: 0;
-  left: -5%;
   font-size: 70px;
   font-weight: 900;
   color: #454545;
@@ -168,8 +167,84 @@ h3 {
 }
 
 #portfolio .content {
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #454545;
-  height: 85vh;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+      grid-template-areas: "card1" "card2" "card3";
+}
+
+#portfolio .content .card {
+  position: relative;
+  left: 2.5%;
+  top: calc(50% - 25%);
+  color: #535353;
+  background-color: #fff;
+  border-radius: 2%;
+  padding: 5%;
+  width: 85%;
+  margin-top: 5%;
+}
+
+#portfolio .content .card h3 {
+  text-transform: uppercase;
+  color: #ff9800;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+#portfolio .content .card hr {
+  border: 1.5px solid #ff9800;
+  border-radius: 5px;
+  width: 90%;
+}
+
+#portfolio .content .card #links {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+#portfolio .content .card #links.col2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#portfolio .content .card #links.col3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#portfolio .content .card #links a {
+  text-decoration: none;
+  color: #ff9800;
+  font-size: 2em;
+}
+
+#portfolio .content .card #links a:hover {
+  color: #ffc300;
+}
+
+#portfolio .content #card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card1;
+}
+
+#portfolio .content #card2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card2;
+}
+
+#portfolio .content #card2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: card3;
 }
 
 @media (min-width: 700px) {
@@ -403,8 +478,22 @@ h3 {
     margin: 0;
   }
   #portfolio .content {
-    background-color: #454545;
     height: 74vh;
+        grid-template-areas: "card1 card2 card3";
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+  }
+  #portfolio .content .card {
+    position: relative;
+    left: 15%;
+    top: calc(50% - 25%);
+    color: #535353;
+    background-color: #fff;
+    border-radius: 2%;
+    width: 60%;
+    height: 50%;
+    margin-top: 0%;
   }
 }
 

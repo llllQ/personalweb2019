@@ -1,5 +1,5 @@
 $font-stack: "Montserrat", sans-serif, Arial;
-$font-headings: "Roboto Mono", monospace;
+$font-headings: "Roboto Mono", monospace, Arial;
 $gainsclr: #dedede;
 $vividclr: #ff9800;
 $hoverclr: #ffc300;
@@ -149,37 +149,107 @@ h3 {
   }
 }
 
-#portfolio{
-    // height: 200vh;
-    // background-color: #fff;
-    .header{
-      background-color: #fff;
-      height: 15vh;
-      overflow: hidden;
+#portfolio {
+  .header {
+    background-color: #fff;
+    height: 15vh;
+    overflow: hidden;
+    position: relative;
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+    h1 {
+      position: absolute;
+      bottom: 0;
+      // left: -16%;
+      // left:
+      font-size: 70px;
+      font-weight: 900;
+      color: $spaceclr;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+  .content {
+    // position: relative;
+    // left:
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: $spaceclr;
+    // height: 10vh;
+    width: 90%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3";
+    .card {
       position: relative;
-      .desktop{
-        display: none;
-      }
-      .mobile{
-        display: block;
-      }
-      h1{
-        position: absolute;
-        bottom: 0;
-        // left: -16%;
-        left: -5%;
-        font-size: 70px;
-        font-weight: 900;
-        color: $spaceclr;
+      left: 2.5%;
+      top: calc(50% - 25%);
+      color: $textclr;
+      background-color: #fff;
+      border-radius: 2%;
+      padding: 5%;
+      width: 85%;
+      margin-top: 5%;
+      
+      // height: 50%;
+      h3{
         text-transform: uppercase;
+        color: $vividclr;
+        font-weight: 900;
+        font-size: 1.5em;
         margin: 0;
+      }
+      p{
         
       }
+      hr{
+        border: 1.5px solid $vividclr;
+        border-radius: 5px;
+        width: 90%;
+      }
+
+      #links{
+        display: grid;
+        text-align: center;
+      }
+
+      #links.col2{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      #links.col3{
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+
+      #links a{
+        text-decoration: none;
+        color: $vividclr;
+        font-size: 2em;
+      }
+
+      #links a:hover{
+        color: $hoverclr;
+      }
+
     }
-    .content{
-      background-color: $spaceclr;
-      height: 85vh;
+    #card1 {
+      grid-area: card1;
     }
+    #card2 {
+      grid-area: card2;
+    }
+    #card2 {
+      grid-area: card3;
+    }
+  }
 }
 
 @media (min-width: 700px) {
@@ -385,20 +455,20 @@ h3 {
       }
     }
   }
-  #portfolio{
+  #portfolio {
     // height: 200vh;
     // background-color: #fff;
-    .header{
+    .header {
       background-color: #fff;
       height: 26vh;
       overflow: hidden;
-      .desktop{
+      .desktop {
         display: block;
       }
-      .mobile{
+      .mobile {
         display: none;
       }
-      h1{
+      h1 {
         position: relative;
         top: 5%;
         left: -60%;
@@ -406,14 +476,32 @@ h3 {
         font-weight: 900;
         color: $spaceclr;
         margin: 0;
-        
       }
     }
-    .content{
-      background-color: $spaceclr;
+    .content {
       height: 74vh;
+      
+      grid-template-areas: "card1 card2 card3";
+      padding-left: 5%;
+      padding-right: 5%;
+      width: 90%;
+
+      .card {
+        position: relative;
+        left: 15%;
+        top: calc(50% - 25%);
+        color: $textclr;
+        background-color: #fff;
+        border-radius: 2%;
+        width: 60%;
+        height: 50%;
+        margin-top: 0%;
+
+  
+      }
+      
     }
-}
+  }
 }
 
 @media (min-width: 1000px) and (aspect-ratio: 16/9) {
