@@ -154,13 +154,19 @@ h3 {
     // background-color: #fff;
     .header{
       background-color: #fff;
-      height: 26vh;
+      height: 15vh;
       overflow: hidden;
+      .desktop{
+        display: none;
+      }
+      .mobile{
+        display: block;
+      }
       h1{
         position: relative;
-        top: 5%;
-        left: -60%;
-        font-size: 15em;
+        top: 42%;
+        left: -16%;
+        font-size: 70px;
         font-weight: 900;
         color: $spaceclr;
         margin: 0;
@@ -169,7 +175,7 @@ h3 {
     }
     .content{
       background-color: $spaceclr;
-      height: 74vh;
+      height: 85vh;
     }
 }
 
@@ -376,6 +382,35 @@ h3 {
       }
     }
   }
+  #portfolio{
+    // height: 200vh;
+    // background-color: #fff;
+    .header{
+      background-color: #fff;
+      height: 26vh;
+      overflow: hidden;
+      .desktop{
+        display: block;
+      }
+      .mobile{
+        display: none;
+      }
+      h1{
+        position: relative;
+        top: 5%;
+        left: -60%;
+        font-size: 15em;
+        font-weight: 900;
+        color: $spaceclr;
+        margin: 0;
+        
+      }
+    }
+    .content{
+      background-color: $spaceclr;
+      height: 74vh;
+    }
+}
 }
 
 @media (min-width: 1000px) and (aspect-ratio: 16/9) {
