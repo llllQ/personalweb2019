@@ -183,7 +183,8 @@ p {
     // left:
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
+    padding-top: 5%;
     background-color: $spaceclr;
     // height: 10vh;
     width: 90%;
@@ -496,8 +497,7 @@ p {
       height: 74vh;
 
       grid-template-areas: "card1 card2 card3";
-      padding-left: 5%;
-      padding-right: 5%;
+      padding: 5%;
       width: 90%;
 
       .card {
