@@ -198,6 +198,10 @@ h3 {
   margin: 0;
 }
 
+#portfolio .content .card p {
+  font-size: 20px;
+}
+
 #portfolio .content .card hr {
   border: 1.5px solid #ff9800;
   border-radius: 5px;
