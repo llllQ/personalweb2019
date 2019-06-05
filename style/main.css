@@ -268,8 +268,82 @@ p {
 }
 
 #contact {
-  height: 100vh;
+  height: 33vh;
   background-color: #ffc300;
+}
+
+#contact .heading {
+  color: #535353;
+  text-align: center;
+  margin-top: 0;
+  position: relative;
+  padding-top: 3%;
+}
+
+#contact .heading h1 {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 50px;
+}
+
+#contact .social {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "icon1 icon2 icon3" "caption1 caption2 caption3";
+  width: 80%;
+  position: relative;
+  left: calc(50% - 40%);
+  text-align: center;
+}
+
+#contact .social a {
+  text-decoration: none;
+  font-size: 3.5em;
+  color: #454545;
+}
+
+#contact .social a:active {
+  color: #000;
+}
+
+#contact .social a:hover {
+  color: #fff;
+}
+
+#contact .social #ICON-L {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: icon1;
+}
+
+#contact .social #ICON-G {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: icon2;
+}
+
+#contact .social #ICON-R {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: icon3;
+}
+
+#contact .social #CAP-L {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: caption1;
+}
+
+#contact .social #CAP-G {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: caption2;
+}
+
+#contact .social #CAP-R {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: caption3;
 }
 
 @media (min-width: 700px) {

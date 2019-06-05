@@ -263,8 +263,61 @@ p {
 }
 
 #contact {
-  height: 100vh;
+  height: 33vh;
   background-color: $hoverclr;
+  .heading{
+    color: $textclr;
+    text-align: center;
+    margin-top: 0;
+    // position: relative;
+    // top: 5%;
+    position: relative;
+    padding-top: 3%;
+    h1{
+      text-transform: uppercase;
+      margin-top: 0;
+      font-size: 50px;
+    }
+  }
+  .social{
+    display: grid;
+      grid-template-areas:
+        "icon1 icon2 icon3"
+        "caption1 caption2 caption3";
+        width: 80%;
+        position: relative;
+        left: calc(50% - 40%);
+        text-align: center;
+    a{
+      text-decoration: none;
+      font-size: 3.5em;
+      color: $spaceclr;
+    }
+    a:active {
+      color: #000;
+    }
+    a:hover {
+      color: #fff;
+    }
+    #ICON-L {
+      grid-area: icon1;
+    }
+    #ICON-G {
+      grid-area: icon2;
+    }
+    #ICON-R {
+      grid-area: icon3;
+    }
+    #CAP-L {
+      grid-area: caption1;
+    }
+    #CAP-G {
+      grid-area: caption2;
+    }
+    #CAP-R {
+      grid-area: caption3;
+    }
+  }
 }
 
 @media (min-width: 700px) {
@@ -559,12 +612,10 @@ p {
 
   #aboutMe {
     .sidebar {
-      // display: block;
       width: 30%;
       height: 100%;
       float: left;
       background-color: $gainsclr;
-      // box-shadow: 0px 0px 1px 1px #AAA;
     }
     #showpiece {
       position: relative;
@@ -575,7 +626,6 @@ p {
       position: absolute;
       top: calc(167%);
       left: calc(38%);
-      // top: ca
     }
   }
 
