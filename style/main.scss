@@ -178,6 +178,7 @@ h3 {
     // left:
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 5%;
     background-color: $spaceclr;
     // height: 10vh;
     width: 90%;
@@ -189,13 +190,13 @@ h3 {
       "card3";
     .card {
       position: relative;
-      left: 2.5%;
-      top: calc(50% - 25%);
+      left: 7.5%;
+      // top: calc(50% - 25%);
       color: $textclr;
       background-color: #fff;
       border-radius: 2%;
       padding: 5%;
-      width: 85%;
+      width: 75%;
       margin-top: 5%;
       
       // height: 50%;

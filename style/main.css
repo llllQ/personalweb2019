@@ -169,6 +169,7 @@ h3 {
 #portfolio .content {
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
   background-color: #454545;
   width: 90%;
   display: -ms-grid;
@@ -179,13 +180,12 @@ h3 {
 
 #portfolio .content .card {
   position: relative;
-  left: 2.5%;
-  top: calc(50% - 25%);
+  left: 7.5%;
   color: #535353;
   background-color: #fff;
   border-radius: 2%;
   padding: 5%;
-  width: 85%;
+  width: 75%;
   margin-top: 5%;
 }
 
