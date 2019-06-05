@@ -663,6 +663,9 @@ p {
     padding-left: 20%;
     padding-right: 20%;
   }
+  #portfolio .content .card {
+    height: 64%;
+  }
 }
 
 @media (min-width: 2000px) and (aspect-ratio: 16 / 9) {
