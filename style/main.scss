@@ -2,6 +2,7 @@ $font-stack: "Montserrat", sans-serif;
 $font-headings: "Roboto Mono", monospace;
 $gainsclr: #dedede;
 $vividclr: #ff9800;
+$hoverclr: #ffc300;
 $ivoryclr: #fffff0;
 $spaceclr: #454545;
 $textclr: #535353;
@@ -68,6 +69,10 @@ h3 {
   }
   #downScroll:active {
     color: #fff;
+  }
+
+  .social {
+    display: none;
   }
 }
 
@@ -144,20 +149,21 @@ h3 {
   }
 }
 
-// #portfolio{
-//     height: 100vh;
-// }
+#portfolio{
+    height: 100vh;
+    background-color: $stormclr;
+}
 
 @media (min-width: 700px) {
   #landing {
     .titleText {
       position: relative;
-      font-size: 9em;
+      font-size: 10em;
       font-weight: 900;
       // top: calc(50% - 41%);
       top: calc(50% - 2.5em);
       margin: 0;
-      margin-left: 10%;
+      margin-left: 11%;
       .forename {
         color: $vividclr;
       }
@@ -165,6 +171,9 @@ h3 {
         color: #fff;
       }
     }
+    // .titleText:hover .forename{
+    //   color: $hoverclr;
+    // }
 
     #downScroll {
       font-size: 6.5em;
@@ -172,10 +181,69 @@ h3 {
       color: $vividclr;
       position: absolute;
       left: calc(50% - 0.5em);
-      top: calc(100% - 20%);
+      top: calc(100% - 15%);
+    }
+    #downScroll:hover {
+      color: $hoverclr;
     }
     #downScroll:active {
       color: #fff;
+    }
+
+    .social {
+      display: grid;
+      grid-template-areas:
+        "portfolio portfolio portfolio"
+        "icon1 icon2 icon3"
+        "caption1 caption2 caption3";
+      position: absolute;
+      width: 35%;
+      margin-left: 55%;
+      margin-right: 10%;
+      top: calc(50% - 10em);
+      text-align: center;
+      #CAPTION {
+        grid-area: portfolio;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 2.5em;
+      }
+      #ICON-L {
+        grid-area: icon1;
+      }
+      #ICON-G {
+        grid-area: icon2;
+      }
+      #ICON-R {
+        grid-area: icon3;
+      }
+      #CAP-L {
+        grid-area: caption1;
+      }
+      #CAP-G {
+        grid-area: caption2;
+      }
+      #CAP-R {
+        grid-area: caption3;
+      }
+
+      p {
+        font-size: 1em;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 0;
+      }
+      a {
+        font-size: 8em;
+        color: $vividclr;
+      }
+      a:active {
+        color: #fff;
+      }
+      a:hover {
+        color: $hoverclr;
+      }
     }
   }
   #aboutMe {
@@ -185,7 +253,7 @@ h3 {
       width: 25%;
       height: 100%;
       float: left;
-      background-color: $gainsclr;
+      background-color: $stormclr;
     }
     #showpiece {
       position: relative;
@@ -206,6 +274,7 @@ h3 {
     width: 30rem;
     height: 30rem;
   }
+
   .mediumCircle {
     width: 12rem;
     height: 12rem;
@@ -218,7 +287,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    // grid-template-rows: 100px 100px 100px;
     grid-template-areas:
       "title title title"
       "text text text"
@@ -244,8 +312,7 @@ h3 {
       border-style: solid;
       border-width: 2px;
       width: 80%;
-      height: 120%;
-      // padding-top: 80%;
+      height: 130%;
       margin-left: 10%;
       overflow: hidden;
     }
@@ -305,9 +372,6 @@ h3 {
       .forename {
         color: $vividclr;
       }
-      .surname {
-        // padding-top: 500px;
-      }
     }
     #downScroll {
       font-size: 6.5em;
@@ -319,6 +383,20 @@ h3 {
     }
     #downScroll:active {
       color: #fff;
+    }
+
+    .social {
+      width: 30%;
+      margin-left: 60%;
+      top: calc(50% - 10%);
+
+      p {
+        font-size: 1.5em;
+        font-weight: 600;
+      }
+      a {
+        font-size: 10em;
+      }
     }
   }
 
@@ -364,8 +442,21 @@ h3 {
       font-size: 16em;
       margin-left: 10%;
     }
-    #downScroll{
+    #downScroll {
       font-size: 13em;
+    }
+    .social {
+      width: 30%;
+      margin-left: 60%;
+      top: calc(50% - 10%);
+
+      p {
+        font-size: 2em;
+        font-weight: 600;
+      }
+      a {
+        font-size: 13em;
+      }
     }
   }
   #aboutMe {
@@ -421,8 +512,21 @@ h3 {
       font-size: 25em;
       margin-left: 9%;
     }
-    #downScroll{
+    #downScroll {
       font-size: 20em;
+    }
+    .social {
+      width: 30%;
+      margin-left: 60%;
+      top: calc(50% - 10%);
+
+      p {
+        font-size: 3em;
+        font-weight: 600;
+      }
+      a {
+        font-size: 21em;
+      }
     }
   }
   #aboutMe {

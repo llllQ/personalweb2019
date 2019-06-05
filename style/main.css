@@ -64,6 +64,10 @@ h3 {
   color: #fff;
 }
 
+#landing .social {
+  display: none;
+}
+
 #aboutMe {
   height: 100vh;
   overflow: hidden;
@@ -137,14 +141,19 @@ h3 {
   display: none;
 }
 
+#portfolio {
+  height: 100vh;
+  background-color: #4e6766;
+}
+
 @media (min-width: 700px) {
   #landing .titleText {
     position: relative;
-    font-size: 9em;
+    font-size: 10em;
     font-weight: 900;
     top: calc(50% - 2.5em);
     margin: 0;
-    margin-left: 10%;
+    margin-left: 11%;
   }
   #landing .titleText .forename {
     color: #ff9800;
@@ -158,10 +167,80 @@ h3 {
     color: #ff9800;
     position: absolute;
     left: calc(50% - 0.5em);
-    top: calc(100% - 20%);
+    top: calc(100% - 15%);
+  }
+  #landing #downScroll:hover {
+    color: #ffc300;
   }
   #landing #downScroll:active {
     color: #fff;
+  }
+  #landing .social {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "portfolio portfolio portfolio" "icon1 icon2 icon3" "caption1 caption2 caption3";
+    position: absolute;
+    width: 35%;
+    margin-left: 55%;
+    margin-right: 10%;
+    top: calc(50% - 10em);
+    text-align: center;
+  }
+  #landing .social #CAPTION {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: portfolio;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 2.5em;
+  }
+  #landing .social #ICON-L {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: icon1;
+  }
+  #landing .social #ICON-G {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: icon2;
+  }
+  #landing .social #ICON-R {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: icon3;
+  }
+  #landing .social #CAP-L {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: caption1;
+  }
+  #landing .social #CAP-G {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: caption2;
+  }
+  #landing .social #CAP-R {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: caption3;
+  }
+  #landing .social p {
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0;
+  }
+  #landing .social a {
+    font-size: 8em;
+    color: #ff9800;
+  }
+  #landing .social a:active {
+    color: #fff;
+  }
+  #landing .social a:hover {
+    color: #ffc300;
   }
   #aboutMe {
     height: 100vh;
@@ -171,7 +250,7 @@ h3 {
     width: 25%;
     height: 100%;
     float: left;
-    background-color: #dedede;
+    background-color: #4e6766;
   }
   #aboutMe #showpiece {
     position: relative;
@@ -231,7 +310,7 @@ h3 {
     border-style: solid;
     border-width: 2px;
     width: 80%;
-    height: 120%;
+    height: 130%;
     margin-left: 10%;
     overflow: hidden;
   }
@@ -302,6 +381,18 @@ h3 {
   #landing #downScroll:active {
     color: #fff;
   }
+  #landing .social {
+    width: 30%;
+    margin-left: 60%;
+    top: calc(50% - 10%);
+  }
+  #landing .social p {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  #landing .social a {
+    font-size: 10em;
+  }
   #aboutMe .sidebar {
     width: 30%;
     height: 100%;
@@ -332,6 +423,18 @@ h3 {
     margin-left: 10%;
   }
   #landing #downScroll {
+    font-size: 13em;
+  }
+  #landing .social {
+    width: 30%;
+    margin-left: 60%;
+    top: calc(50% - 10%);
+  }
+  #landing .social p {
+    font-size: 2em;
+    font-weight: 600;
+  }
+  #landing .social a {
     font-size: 13em;
   }
   #aboutMe .sidebar {
@@ -381,6 +484,18 @@ h3 {
   }
   #landing #downScroll {
     font-size: 20em;
+  }
+  #landing .social {
+    width: 30%;
+    margin-left: 60%;
+    top: calc(50% - 10%);
+  }
+  #landing .social p {
+    font-size: 3em;
+    font-weight: 600;
+  }
+  #landing .social a {
+    font-size: 21em;
   }
   #aboutMe .sidebar {
     width: 30%;
