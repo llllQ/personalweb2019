@@ -351,7 +351,7 @@ p {
     position: relative;
     font-size: 10em;
     font-weight: 900;
-    top: calc(50% - 2.5em);
+    top: calc(50% - 2.7em);
     margin: 0;
     margin-left: 11%;
   }
@@ -497,7 +497,7 @@ p {
     color: #454545;
   }
   #aboutMeContainer p {
-    font-size: 20px;
+    font-size: 18px;
     color: #535353;
     text-align: justify;
     -ms-grid-row: 2;
@@ -569,7 +569,7 @@ p {
   }
   #portfolio .header h1 {
     position: relative;
-    top: 5%;
+    top: -13%;
     left: -60%;
     font-size: 15em;
     font-weight: 900;
@@ -595,6 +595,9 @@ p {
     -webkit-box-shadow: #2f2f2f;
             box-shadow: #2f2f2f;
   }
+  #portfolio .content .card p {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1000px) and (aspect-ratio: 16 / 9) {
@@ -602,7 +605,7 @@ p {
     position: relative;
     font-size: 12em;
     font-weight: 900;
-    top: calc(50% - 2.5em);
+    top: calc(50% - 2.7em);
     margin: 0;
     margin-left: 10%;
   }
@@ -615,7 +618,7 @@ p {
     color: #ff9800;
     position: absolute;
     left: calc(50% - 0.5em);
-    top: calc(100% - 20%);
+    top: calc(100% - 16%);
   }
   #landing #downScroll:active {
     color: #fff;
@@ -656,7 +659,7 @@ p {
   }
   #portfolio .header h1 {
     font-size: 16em;
-    top: 19%;
+    top: 5%;
   }
   #portfolio .content {
     width: 60%;
@@ -727,13 +730,16 @@ p {
     padding-bottom: 30px;
   }
   #portfolio .header h1 {
-    font-size: 20em;
-    top: 22%;
+    font-size: 25em;
+    top: -10%;
   }
   #portfolio .content {
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
+  }
+  #portfolio .content .card {
+    width: 80%;
   }
   #portfolio .content .card h3 {
     font-size: 3em;
@@ -743,6 +749,22 @@ p {
   }
   #portfolio .content .card #links a {
     font-size: 3.2em;
+  }
+  #contact .heading h1 {
+    font-size: 3em;
+  }
+  #contact .social {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "icon1 icon2 icon3" "caption1 caption2 caption3";
+    width: 60%;
+    left: calc(50% - 30%);
+  }
+  #contact .social a {
+    font-size: 6em;
+  }
+  #contact .social p {
+    font-size: 2em;
   }
 }
 
@@ -801,12 +823,12 @@ p {
     padding-bottom: 20px;
   }
   #aboutMeContainer p {
-    font-size: 44px;
+    font-size: 40px;
     padding-bottom: 30px;
   }
   #portfolio .header h1 {
-    font-size: 30em;
-    top: 23%;
+    font-size: 40em;
+    top: -17%;
   }
   #portfolio .content {
     width: 80%;
@@ -817,10 +839,26 @@ p {
     font-size: 4em;
   }
   #portfolio .content .card p {
-    font-size: 3em;
+    font-size: 2.7em;
   }
   #portfolio .content .card #links a {
     font-size: 6em;
+  }
+  #contact .heading h1 {
+    font-size: 5em;
+  }
+  #contact .social {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "icon1 icon2 icon3" "caption1 caption2 caption3";
+    width: 60%;
+    left: calc(50% - 30%);
+  }
+  #contact .social a {
+    font-size: 10em;
+  }
+  #contact .social p {
+    font-size: 3em;
   }
 }
 /*# sourceMappingURL=main.css.map */

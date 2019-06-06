@@ -327,7 +327,7 @@ p {
       font-size: 10em;
       font-weight: 900;
       // top: calc(50% - 41%);
-      top: calc(50% - 2.5em);
+      top: calc(50% - 2.7em);
       margin: 0;
       margin-left: 11%;
       .forename {
@@ -467,7 +467,7 @@ p {
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
       color: $textclr;
       text-align: justify;
       grid-area: text;
@@ -538,7 +538,7 @@ p {
       }
       h1 {
         position: relative;
-        top: 5%;
+        top: -13%;
         left: -60%;
         font-size: 15em;
         font-weight: 900;
@@ -564,6 +564,9 @@ p {
         height: 62%;
         margin-top: 0%;
         box-shadow: #2f2f2f;
+        p {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -576,7 +579,7 @@ p {
       font-size: 12em;
       font-weight: 900;
       // top: calc(50% - 41%);
-      top: calc(50% - 2.5em);
+      top: calc(50% - 2.7em);
       margin: 0;
       margin-left: 10%;
       .forename {
@@ -589,7 +592,7 @@ p {
       color: $vividclr;
       position: absolute;
       left: calc(50% - 0.5em);
-      top: calc(100% - 20%);
+      top: calc(100% - 16%);
     }
     #downScroll:active {
       color: #fff;
@@ -634,19 +637,13 @@ p {
     top: -120px;
     margin-left: 55%;
     margin-right: 15%;
-
-    h1 {
-    }
-
-    p {
-    }
   }
 
   #portfolio {
     .header{
       h1{
         font-size: 16em;
-        top: 19%;
+        top: 5%;
       }
     }
     .content {
@@ -731,8 +728,8 @@ p {
   #portfolio {
     .header{
       h1{
-        font-size: 20em;
-        top: 22%;
+        font-size: 25em;
+        top: -10%;
       }
     }
     .content {
@@ -741,6 +738,7 @@ p {
       padding-right: 10%;
 
       .card {
+        width: 80%;
         h3{
           font-size: 3em;
         }
@@ -750,6 +748,27 @@ p {
         #links a{
           font-size: 3.2em; 
         }
+      }
+    }
+  }
+  #contact {
+    .heading{
+      h1{
+        font-size: 3em;
+      }
+    }
+    .social{
+      display: grid;
+        grid-template-areas:
+          "icon1 icon2 icon3"
+          "caption1 caption2 caption3";
+          width: 60%;
+          left: calc(50% - 30%);
+      a{
+        font-size: 6em;
+      }
+      p{
+        font-size: 2em;
       }
     }
   }
@@ -819,15 +838,15 @@ p {
     }
 
     p {
-      font-size: 44px;
+      font-size: 40px;
       padding-bottom: 30px;
     }
   }
   #portfolio {
     .header{
       h1{
-        font-size: 30em;
-        top: 23%;
+        font-size:40em;
+        top: -17%;
       }
     }
     .content {
@@ -840,11 +859,32 @@ p {
           font-size: 4em;
         }
         p {
-          font-size: 3em;
+          font-size: 2.7em;
         }
         #links a{
           font-size: 6em; 
         }
+      }
+    }
+  }
+  #contact {
+    .heading{
+      h1{
+        font-size: 5em;
+      }
+    }
+    .social{
+      display: grid;
+        grid-template-areas:
+          "icon1 icon2 icon3"
+          "caption1 caption2 caption3";
+          width: 60%;
+          left: calc(50% - 30%);
+      a{
+        font-size: 10em;
+      }
+      p{
+        font-size: 3em;
       }
     }
   }
