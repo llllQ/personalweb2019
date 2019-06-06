@@ -186,7 +186,9 @@ p {
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
-      grid-template-areas: "card1" "card2" "card3";
+      grid-template-areas: "card1"
+ "card2"
+ "card3";
 }
 
 #portfolio .content .card {
@@ -289,7 +291,8 @@ p {
 #contact .social {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "icon1 icon2 icon3" "caption1 caption2 caption3";
+      grid-template-areas: "icon1 icon2 icon3"
+ "caption1 caption2 caption3";
   width: 80%;
   position: relative;
   left: calc(50% - 40%);
@@ -378,7 +381,9 @@ p {
   #landing .social {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "portfolio portfolio portfolio" "icon1 icon2 icon3" "caption1 caption2 caption3";
+        grid-template-areas: "portfolio portfolio portfolio"
+ "icon1 icon2 icon3"
+ "caption1 caption2 caption3";
     position: absolute;
     width: 35%;
     margin-left: 55%;
@@ -484,7 +489,9 @@ p {
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
-        grid-template-areas: "title title title" "text text text" "img1 img2 img3";
+        grid-template-areas: "title title title"
+ "text text text"
+ "img1 img2 img3";
   }
   #aboutMeContainer h1 {
     font-size: 45px;
