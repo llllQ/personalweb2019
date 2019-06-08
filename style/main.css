@@ -30,6 +30,7 @@ p {
 
 #landing {
   overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
   background-color: #454545;
 }
@@ -61,7 +62,7 @@ p {
   color: #ff9800;
   position: absolute;
   left: calc(50% - 0.5em);
-  top: calc(100% - 20%);
+  top: calc(100% - 12%);
 }
 
 #landing #downScroll:active {
@@ -349,6 +350,203 @@ p {
 @media (min-width: 700px) {
   #landing .titleText {
     position: relative;
+    font-size: 8em;
+    font-weight: 900;
+    top: calc(50% - 3em);
+    margin: 0;
+    margin-left: 5%;
+  }
+  #landing .titleText .forename {
+    color: #ff9800;
+  }
+  #landing .titleText .surname {
+    color: #fff;
+  }
+  #landing .social {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "portfolio portfolio portfolio" "icon1 icon2 icon3" "caption1 caption2 caption3";
+    position: absolute;
+    width: 35%;
+    margin-left: 60%;
+    top: calc(50% - 11em);
+    text-align: center;
+  }
+  #landing .social #CAPTION {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: portfolio;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 1.5em;
+  }
+  #landing .social #ICON-L {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: icon1;
+  }
+  #landing .social #ICON-G {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: icon2;
+  }
+  #landing .social #ICON-R {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: icon3;
+  }
+  #landing .social #CAP-L {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: caption1;
+  }
+  #landing .social #CAP-G {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: caption2;
+  }
+  #landing .social #CAP-R {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: caption3;
+  }
+  #landing .social p {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0;
+  }
+  #landing .social a {
+    font-size: 5em;
+    color: #ff9800;
+  }
+  #landing .social a:active {
+    color: #fff;
+  }
+  #landing .social a:hover {
+    color: #ffc300;
+  }
+  #aboutMe {
+    height: 100vh;
+  }
+  #aboutMe .sidebar {
+    display: block;
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: #dedede;
+  }
+  #aboutMe #showpiece {
+    position: relative;
+    top: calc(50% - 12.5rem);
+    left: calc(25% - 12.5rem);
+  }
+  #aboutMe #showpiecesmall {
+    position: absolute;
+    top: calc(167%);
+    left: calc(38%);
+  }
+  .circle {
+    z-index: 999;
+  }
+  .bigCircle {
+    width: 25rem;
+    height: 25rem;
+  }
+  .mediumCircle {
+    width: 8rem;
+    height: 8rem;
+  }
+  #aboutMeContainer {
+    position: relative;
+    top: -18em;
+    margin-left: 60%;
+    margin-right: 5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "title title title" "text text text" "img1 img2 img3";
+  }
+  #aboutMeContainer h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 0;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: title;
+    color: #454545;
+  }
+  #aboutMeContainer p {
+    font-size: 18px;
+    color: #535353;
+    text-align: justify;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: text;
+  }
+  #aboutMeContainer .aboutIcon {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    width: 80%;
+    height: 130%;
+    margin-left: 10%;
+    overflow: hidden;
+  }
+  #aboutMeContainer img {
+    display: block;
+  }
+  #aboutMeContainer #img1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: img1;
+    border-color: #ff9800;
+  }
+  #aboutMeContainer #img1 img {
+    position: relative;
+    width: 60%;
+    height: 70%;
+    top: calc(50% - 35%);
+    left: calc(50% - 35%);
+  }
+  #aboutMeContainer #img2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: img2;
+    border-color: #ffae00;
+  }
+  #aboutMeContainer #img2 img {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    top: calc(50% - 35%);
+    left: calc(50% - 35%);
+  }
+  #aboutMeContainer #img3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: img3;
+    border-color: #ffe600;
+  }
+  #aboutMeContainer #img3 img {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    top: calc(50% - 35%);
+    left: calc(50% - 35%);
+  }
+}
+
+@media (min-width: 900px) {
+  #landing .titleText {
+    position: relative;
     font-size: 10em;
     font-weight: 900;
     top: calc(50% - 2.7em);
@@ -442,120 +640,6 @@ p {
   #landing .social a:hover {
     color: #ffc300;
   }
-  #aboutMe {
-    height: 100vh;
-  }
-  #aboutMe .sidebar {
-    display: block;
-    width: 25%;
-    height: 100%;
-    float: left;
-    background-color: #dedede;
-  }
-  #aboutMe #showpiece {
-    position: relative;
-    top: calc(50% - 15rem);
-    left: calc(25% - 15rem);
-  }
-  #aboutMe #showpiecesmall {
-    position: absolute;
-    top: calc(167%);
-    left: calc(38%);
-  }
-  .circle {
-    z-index: 999;
-  }
-  .bigCircle {
-    width: 30rem;
-    height: 30rem;
-  }
-  .mediumCircle {
-    width: 12rem;
-    height: 12rem;
-  }
-  #aboutMeContainer {
-    position: relative;
-    top: -280px;
-    margin-left: 55%;
-    margin-right: 15%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "title title title" "text text text" "img1 img2 img3";
-  }
-  #aboutMeContainer h1 {
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 0;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: title;
-    color: #454545;
-  }
-  #aboutMeContainer p {
-    font-size: 18px;
-    color: #535353;
-    text-align: justify;
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: text;
-  }
-  #aboutMeContainer .aboutIcon {
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    width: 80%;
-    height: 130%;
-    margin-left: 10%;
-    overflow: hidden;
-  }
-  #aboutMeContainer img {
-    display: block;
-  }
-  #aboutMeContainer #img1 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: img1;
-    border-color: #ff9800;
-  }
-  #aboutMeContainer #img1 img {
-    position: relative;
-    width: 60%;
-    height: 70%;
-    top: calc(50% - 35%);
-    left: calc(50% - 35%);
-  }
-  #aboutMeContainer #img2 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: img2;
-    border-color: #ffae00;
-  }
-  #aboutMeContainer #img2 img {
-    position: relative;
-    width: 70%;
-    height: 70%;
-    top: calc(50% - 35%);
-    left: calc(50% - 35%);
-  }
-  #aboutMeContainer #img3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    grid-area: img3;
-    border-color: #ffe600;
-  }
-  #aboutMeContainer #img3 img {
-    position: relative;
-    width: 70%;
-    height: 70%;
-    top: calc(50% - 35%);
-    left: calc(50% - 35%);
-  }
   #portfolio .header {
     background-color: #fff;
     height: 26vh;
@@ -581,17 +665,17 @@ p {
         grid-template-areas: "card1 card2 card3";
     padding: 5%;
     width: 90%;
+    overflow: hidden;
   }
   #portfolio .content .card {
     position: relative;
     left: 10%;
-    top: calc(50% - 33.5%);
     color: #535353;
     background-color: #fff;
     border-radius: 2%;
     width: 70%;
-    height: 64%;
-    margin-top: 0%;
+    height: auto;
+    margin-bottom: 15%;
     -webkit-box-shadow: #2f2f2f;
             box-shadow: #2f2f2f;
   }

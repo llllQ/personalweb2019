@@ -40,6 +40,7 @@ p {
 
 #landing {
   overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
   background-color: $spaceclr;
 
@@ -68,7 +69,7 @@ p {
     color: $vividclr;
     position: absolute;
     left: calc(50% - 0.5em);
-    top: calc(100% - 20%);
+    top: calc(100% - 12%);
   }
   #downScroll:active {
     color: #fff;
@@ -204,6 +205,7 @@ p {
       padding: 5%;
       width: 75%;
       margin-top: 5%;
+      // overflow: hidden;
 
       // height: 50%;
       h3 {
@@ -320,7 +322,194 @@ p {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px){
+  #landing{
+    .titleText {
+      position: relative;
+      font-size: 8em;
+      font-weight: 900;
+      top: calc(50% - 3em);
+      margin: 0;
+      margin-left: 5%;
+      .forename {
+        color: $vividclr;
+      }
+      .surname {
+        color: #fff;
+      }
+    }
+    .social {
+      display: grid;
+      grid-template-areas:
+        "portfolio portfolio portfolio"
+        "icon1 icon2 icon3"
+        "caption1 caption2 caption3";
+      position: absolute;
+      width: 35%;
+      margin-left: 60%;
+      // margin-right: 5%;
+      top: calc(50% - 11em);
+      text-align: center;
+      #CAPTION {
+        grid-area: portfolio;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 1.5em;
+      }
+      #ICON-L {
+        grid-area: icon1;
+      }
+      #ICON-G {
+        grid-area: icon2;
+      }
+      #ICON-R {
+        grid-area: icon3;
+      }
+      #CAP-L {
+        grid-area: caption1;
+      }
+      #CAP-G {
+        grid-area: caption2;
+      }
+      #CAP-R {
+        grid-area: caption3;
+      }
+
+      p {
+        font-size: 0.8em;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 0;
+      }
+      a {
+        font-size: 5em;
+        color: $vividclr;
+      }
+      a:active {
+        color: #fff;
+      }
+      a:hover {
+        color: $hoverclr;
+      }
+  }
+}
+
+  
+  #aboutMe {
+    height: 100vh;
+    .sidebar {
+      display: block;
+      width: 25%;
+      height: 100%;
+      float: left;
+      background-color: $gainsclr;
+    }
+    #showpiece {
+      position: relative;
+      top: calc(50% - 12.5rem);
+      left: calc(25% - 12.5rem);
+    }
+    #showpiecesmall {
+      position: absolute;
+      top: calc(167%);
+      left: calc(38%);
+    }
+  }
+  .circle {
+    z-index: 999;
+  }
+
+  .bigCircle {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .mediumCircle {
+    width: 8rem;
+    height: 8rem;
+  }
+  #aboutMeContainer {
+    position: relative;
+    top: -18em;
+    margin-left: 60%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title title title"
+      "text text text"
+      "img1 img2 img3";
+
+    h1 {
+      font-size: 45px;
+      font-weight: bold;
+      margin-bottom: 0;
+      grid-area: title;
+      color: $spaceclr;
+    }
+
+    p {
+      font-size: 18px;
+      color: $textclr;
+      text-align: justify;
+      grid-area: text;
+    }
+
+    .aboutIcon {
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 2px;
+      width: 80%;
+      height: 130%;
+      margin-left: 10%;
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+    }
+
+    #img1 {
+      grid-area: img1;
+      border-color: #ff9800;
+      img {
+        position: relative;
+        width: 60%;
+        height: 70%;
+        top: calc(50% - 35%);
+        left: calc(50% - 35%);
+      }
+    }
+
+    #img2 {
+      grid-area: img2;
+      border-color: #ffae00;
+      img {
+        position: relative;
+        width: 70%;
+        height: 70%;
+        top: calc(50% - 35%);
+        left: calc(50% - 35%);
+      }
+    }
+
+    #img3 {
+      grid-area: img3;
+      border-color: #ffe600;
+      img {
+        position: relative;
+        width: 70%;
+        height: 70%;
+        top: calc(50% - 35%);
+        left: calc(50% - 35%);
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
   #landing {
     .titleText {
       position: relative;
@@ -412,117 +601,6 @@ p {
       }
     }
   }
-  #aboutMe {
-    height: 100vh;
-    .sidebar {
-      display: block;
-      width: 25%;
-      height: 100%;
-      float: left;
-      background-color: $gainsclr;
-    }
-    #showpiece {
-      position: relative;
-      top: calc(50% - 15rem);
-      left: calc(25% - 15rem);
-    }
-    #showpiecesmall {
-      position: absolute;
-      top: calc(167%);
-      left: calc(38%);
-    }
-  }
-  .circle {
-    z-index: 999;
-  }
-
-  .bigCircle {
-    width: 30rem;
-    height: 30rem;
-  }
-
-  .mediumCircle {
-    width: 12rem;
-    height: 12rem;
-  }
-  #aboutMeContainer {
-    position: relative;
-    top: -280px;
-    margin-left: 55%;
-    margin-right: 15%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "title title title"
-      "text text text"
-      "img1 img2 img3";
-
-    h1 {
-      font-size: 45px;
-      font-weight: bold;
-      margin-bottom: 0;
-      grid-area: title;
-      color: $spaceclr;
-    }
-
-    p {
-      font-size: 18px;
-      color: $textclr;
-      text-align: justify;
-      grid-area: text;
-    }
-
-    .aboutIcon {
-      border-radius: 50%;
-      border-style: solid;
-      border-width: 2px;
-      width: 80%;
-      height: 130%;
-      margin-left: 10%;
-      overflow: hidden;
-    }
-
-    img {
-      display: block;
-    }
-
-    #img1 {
-      grid-area: img1;
-      border-color: #ff9800;
-      img {
-        position: relative;
-        width: 60%;
-        height: 70%;
-        top: calc(50% - 35%);
-        left: calc(50% - 35%);
-      }
-    }
-
-    #img2 {
-      grid-area: img2;
-      border-color: #ffae00;
-      img {
-        position: relative;
-        width: 70%;
-        height: 70%;
-        top: calc(50% - 35%);
-        left: calc(50% - 35%);
-      }
-    }
-
-    #img3 {
-      grid-area: img3;
-      border-color: #ffe600;
-      img {
-        position: relative;
-        width: 70%;
-        height: 70%;
-        top: calc(50% - 35%);
-        left: calc(50% - 35%);
-      }
-    }
-  }
   #portfolio {
     // height: 200vh;
     // background-color: #fff;
@@ -552,17 +630,19 @@ p {
       grid-template-areas: "card1 card2 card3";
       padding: 5%;
       width: 90%;
+      overflow: hidden;
 
       .card {
         position: relative;
         left: 10%;
-        top: calc(50% - 33.5%);
+        // top: calc(50% - 33.5%);
         color: $textclr;
         background-color: #fff;
         border-radius: 2%;
         width: 70%;
-        height: 64%;
-        margin-top: 0%;
+        // height: 64%;
+        height: auto;
+        margin-bottom: 15%;
         box-shadow: #2f2f2f;
         p {
           font-size: 18px;
