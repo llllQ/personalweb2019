@@ -69,6 +69,10 @@ p {
   color: #fff;
 }
 
+#landing #landing #downText {
+  display: none;
+}
+
 #landing .social {
   display: none;
 }
@@ -345,6 +349,38 @@ p {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: caption3;
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  #landing #downScroll {
+    display: none;
+  }
+  #landing #downText {
+    display: block;
+    color: #ff9800;
+    font-size: 1.5em;
+    width: 1em;
+    font-weight: 600;
+    position: absolute;
+    left: calc(50% - 1.5em);
+    top: calc(100% - 14%);
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #landing #downScroll {
+    display: none;
+  }
+  #landing #downText {
+    display: block;
+    color: #ff9800;
+    font-size: 1.5em;
+    width: 1em;
+    font-weight: 600;
+    position: absolute;
+    left: calc(50% - 1.5em);
+    top: calc(100% - 14%);
+  }
 }
 
 @media (min-width: 700px) {

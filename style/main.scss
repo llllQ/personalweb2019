@@ -74,6 +74,9 @@ p {
   #downScroll:active {
     color: #fff;
   }
+  #landing #downText {
+    display: none;
+  }
 
   .social {
     display: none;
@@ -218,7 +221,7 @@ p {
       p {
         font-size: 20px;
       }
-      .bold{
+      .bold {
         // color: black;
         color: $vividclr;
         font-weight: 700;
@@ -267,7 +270,7 @@ p {
 #contact {
   height: 33vh;
   background-color: $hoverclr;
-  .heading{
+  .heading {
     color: $textclr;
     text-align: center;
     margin-top: 0;
@@ -275,22 +278,22 @@ p {
     // top: 5%;
     position: relative;
     padding-top: 3%;
-    h1{
+    h1 {
       text-transform: uppercase;
       margin-top: 0;
       font-size: 45px;
     }
   }
-  .social{
+  .social {
     display: grid;
-      grid-template-areas:
-        "icon1 icon2 icon3"
-        "caption1 caption2 caption3";
-        width: 80%;
-        position: relative;
-        left: calc(50% - 40%);
-        text-align: center;
-    a{
+    grid-template-areas:
+      "icon1 icon2 icon3"
+      "caption1 caption2 caption3";
+    width: 80%;
+    position: relative;
+    left: calc(50% - 40%);
+    text-align: center;
+    a {
       text-decoration: none;
       font-size: 3.5em;
       color: $spaceclr;
@@ -322,8 +325,48 @@ p {
   }
 }
 
-@media (min-width: 700px){
-  #landing{
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  #landing #downScroll {
+    display: none;
+  }
+  #landing #downText {
+    display: block;
+    color: $vividclr;
+      font-size: 1.5em;
+      width: 1em;
+      font-weight: 600;
+      position: absolute;
+      left: calc(50% - 1.5em);
+      top: calc(100% - 14%);
+    
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  #landing #downScroll {
+    display: none;
+  }
+  #landing #downText {
+    display: block;
+    color: $vividclr;
+      font-size: 1.5em;
+      width: 1em;
+      font-weight: 600;
+      position: absolute;
+      left: calc(50% - 1.5em);
+      top: calc(100% - 14%);
+    
+  }
+}
+
+// @media only screen
+// and (min-device-width : 375px)
+// and (max-device-width : 667px)
+// and (orientation : portrait) { #landing #downScroll {
+//   display: none; }}
+
+@media (min-width: 700px) {
+  #landing {
     .titleText {
       position: relative;
       font-size: 8em;
@@ -392,10 +435,9 @@ p {
       a:hover {
         color: $hoverclr;
       }
+    }
   }
-}
 
-  
   #aboutMe {
     height: 100vh;
     .sidebar {
@@ -720,8 +762,8 @@ p {
   }
 
   #portfolio {
-    .header{
-      h1{
+    .header {
+      h1 {
         font-size: 16em;
         top: 5%;
       }
@@ -806,8 +848,8 @@ p {
     }
   }
   #portfolio {
-    .header{
-      h1{
+    .header {
+      h1 {
         font-size: 25em;
         top: -10%;
       }
@@ -819,35 +861,35 @@ p {
 
       .card {
         width: 80%;
-        h3{
+        h3 {
           font-size: 3em;
         }
         p {
           font-size: 2em;
         }
-        #links a{
-          font-size: 3.2em; 
+        #links a {
+          font-size: 3.2em;
         }
       }
     }
   }
   #contact {
-    .heading{
-      h1{
+    .heading {
+      h1 {
         font-size: 3em;
       }
     }
-    .social{
+    .social {
       display: grid;
-        grid-template-areas:
-          "icon1 icon2 icon3"
-          "caption1 caption2 caption3";
-          width: 60%;
-          left: calc(50% - 30%);
-      a{
+      grid-template-areas:
+        "icon1 icon2 icon3"
+        "caption1 caption2 caption3";
+      width: 60%;
+      left: calc(50% - 30%);
+      a {
         font-size: 6em;
       }
-      p{
+      p {
         font-size: 2em;
       }
     }
@@ -923,9 +965,9 @@ p {
     }
   }
   #portfolio {
-    .header{
-      h1{
-        font-size:40em;
+    .header {
+      h1 {
+        font-size: 40em;
         top: -17%;
       }
     }
@@ -935,35 +977,35 @@ p {
       padding-right: 10%;
 
       .card {
-        h3{
+        h3 {
           font-size: 4em;
         }
         p {
           font-size: 2.7em;
         }
-        #links a{
-          font-size: 6em; 
+        #links a {
+          font-size: 6em;
         }
       }
     }
   }
   #contact {
-    .heading{
-      h1{
+    .heading {
+      h1 {
         font-size: 5em;
       }
     }
-    .social{
+    .social {
       display: grid;
-        grid-template-areas:
-          "icon1 icon2 icon3"
-          "caption1 caption2 caption3";
-          width: 60%;
-          left: calc(50% - 30%);
-      a{
+      grid-template-areas:
+        "icon1 icon2 icon3"
+        "caption1 caption2 caption3";
+      width: 60%;
+      left: calc(50% - 30%);
+      a {
         font-size: 10em;
       }
-      p{
+      p {
         font-size: 3em;
       }
     }
